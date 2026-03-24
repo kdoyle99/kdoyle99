@@ -1,3 +1,4 @@
+<img src="github-banner.jpeg" alt="GitHub profile banner for Katelyn Hernandez">
 <h1>Hi there, I’m Katelyn! 👋</h1>
 <p>Detail-oriented front-end web development student graduating in June with a strong foundation in responsive web design. Dedicated to creating intuitive user experiences through thoughtful design implementation and continuous skill growth.</p>
 
