@@ -1,4 +1,4 @@
-<img src="github-banner.jpeg" alt="GitHub profile banner for Katelyn Hernandez">
+<img src="github-banner.jpg" alt="GitHub profile banner for Katelyn Hernandez">
 <h1>Hi there, I’m Katelyn! 👋</h1>
 <p>Detail-oriented front-end web development student graduating in June with a strong foundation in responsive web design. Dedicated to creating intuitive user experiences through thoughtful design implementation and continuous skill growth.</p>
 
@@ -7,6 +7,15 @@
   <li>HTML</li>
   <li>CSS</li>
   <li>Javascript</li>
+</ul>
+
+<h2>Tools I Use ⚙️</h2>
+<ul>
+  <li>GitHub</li>
+  <li>Visual Studio Code</li>
+  <li>Codepen</li>
+  <li>Figma</li>
+  <li>Adobe CC (Photoshop, Illustrator, InDesign, After Effects, Premiere Pro)</li>
 </ul>
 
 <h2>Contact Me 📞</h2>
