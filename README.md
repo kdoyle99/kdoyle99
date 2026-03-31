@@ -8,12 +8,14 @@ Detail-oriented front-end web development student graduating in June with a stro
 ## ⚙️ Tools I Use
 [![My Skills](https://skillicons.dev/icons?i=github,vscode,codepen,figma,ps,ai,ae,pr)](https://skillicons.dev)
 
-## 📞 Contact Me
-[![My Skills](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/katelyn-hernandez-web-dev/)
-[![My Skills](https://skillicons.dev/icons?i=gmail)](mailto:katelyn.robin.hernandez@gmail.com)
+## 🤝 Let's Connect
+[![My Skills](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/katelyn-hernandez-web-dev/) [![My Skills](https://skillicons.dev/icons?i=gmail)](mailto:katelyn.robin.hernandez@gmail.com)
 
-## 💼 View My Other Work
+## 📁 Check Out My Other Work
 <ul>
   <li><a href="https://codepen.io/kdoyle99">Codepen</a></li>
-  <li><a href="https://www.behance.net/katelyndoyle">Behance</a></li>
+  <li></li>
 </ul>
+
+<a href="https://www.behance.net/katelyndoyle">![Static Badge](https://img.shields.io/badge/Behance-%231769FF?logo=behance&logoColor=white)</a>
+
