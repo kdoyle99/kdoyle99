@@ -16,5 +16,7 @@ I love to code while listening to music and dodging kitties who walk over my key
 
 ## 📁 Check Out My Other Work
 
-![Static Badge](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white&logoSize=auto&link=https%3A%2F%2Fcodepen.io%2Fkdoyle99)  ![Static Badge](https://img.shields.io/badge/Behance-%231769FF?style=for-the-badge&logo=behance&logoColor=white&logoSize=auto&link=https%3A%2F%2Fwww.behance.net%2Fkatelyndoyle)
+<a href="https://codepen.io/kdoyle99">![Static Badge](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white&logoSize=auto)</a>
+
+<a href="https://www.behance.net/katelyndoyle">![Static Badge](https://img.shields.io/badge/Behance-%231769FF?style=for-the-badge&logo=behance&logoColor=white&logoSize=auto)</a>
 
