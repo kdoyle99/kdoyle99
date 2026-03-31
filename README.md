@@ -2,6 +2,9 @@
 # Hi there, I’m Katelyn! 👋
 Detail-oriented front-end web development student graduating in June with a strong foundation in responsive web design. Dedicated to creating intuitive user experiences through thoughtful design implementation and continuous skill growth.
 
+### Fun Fact
+I love to code while listening to music and dodging kitties who walk over my keyboard.
+
 ## 👩‍💻 Languages I Know
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
 
