@@ -1,0 +1,387 @@
+/* CSS by KATELYN HERNANDEZ */
+
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* ///ADD/// CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Root Variables */
+:root {
+  --blue-bulletin: #1D3557;
+  --news-flash: #E63946;
+  --watchdog-white: #F1FAEE;
+  --truth-text: #333;
+  --story-subtitle: #457B9D;
+  --font-body: "Source Sans 3", sans-serif;
+  --font-heading: 'Merriweather', serif;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  --transition: all 0.5s ease;
+}
+
+/* Manual Light/Dark Mode Styles*/
+body.light-mode {
+  background-color: var(--watchdog-white);
+  color: var(--truth-text);
+}
+body.dark-mode {
+  background-color: var(--truth-text);
+  color: var(--watchdog-white);
+}
+#theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--watchdog-white);
+  border: 1px solid var(--blue-bulletin);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+/* ///ADD/// Skip Link Styles */
+.sr-only {
+  position: absolute;
+  right: 5rem;
+  top: 2rem;
+  transform: translateY(-400%);
+}
+.sr-only:focus {
+  transform: translateY(0%);
+}
+
+/* ///ADD/// Navigation Styles */
+.mobile-nav {
+  padding: 0.75em 0 1em;
+}
+.menu-button {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+.menu {
+  display: none;
+  position: absolute;
+  z-index: 50;
+}
+#menu-toggle:checked ~ .menu {
+  display: block;
+  width: 100%;
+  margin-top: 0.5em;
+}
+.menu li {
+  border: 1px solid var(--blue-bulletin);
+  width: 90%;
+  margin: 0 auto;
+}
+.menu li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+}
+
+/* ///ADD/// Global Layout Styles */
+body {
+  background-color: var(--watchdog-white);
+}
+header, footer {
+  background-color: var(--blue-bulletin);
+}
+h1, header p, main, footer h2, footer ul {
+  margin: 0 1.5rem;
+}
+main {
+  padding: 1rem 0 1.5rem;
+}
+a, .menu-button {
+  background-color: var(--news-flash);
+  border: 1px solid var(--news-flash);
+  transition: var(--transition);
+  padding: calc(0.75em - 0.5px) 0;
+}
+a:hover, .menu-button:hover {
+  background-color: var(--blue-bulletin);
+  border: 1px solid var(--news-flash);
+}
+#breaking-news section, form {
+  background-color: var(--news-flash);
+  border: 1px solid var(--blue-bulletin);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+#breaking-news section {
+  margin-bottom: 0.5rem;
+}
+#breaking-news section:hover, #featured-articles section:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+#breaking-news h3 {
+  border-bottom: 1px solid var(--watchdog-white);
+  margin-bottom: 0.5rem;
+}
+#featured-articles section {
+  border: 1px solid var(--story-subtitle);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  margin: 0 0.5rem 0.5rem;
+}
+#featured-articles h3 {
+  border-bottom: 1px solid var(--story-subtitle);
+  margin-bottom: 0.5rem;
+}
+video {
+  max-width: 100%;
+}
+form {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  padding: 0.5rem 0 0.25rem;
+}
+input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+fieldset {
+  border: 1px solid var(--blue-bulletin);
+  padding: 0.5rem;
+}
+input[name="notification"] {
+  width: 1.25em;
+  height: 1.25em;
+}
+input[name="notification"] + label {
+  cursor: pointer;
+}
+input[name="notification"]:checked {
+  color: var(--watchdog-white);
+  accent-color: var(--blue-bulletin);
+}
+input[type="submit"] {
+  background-color: var(--blue-bulletin);
+  box-shadow: var(--shadow);
+  margin-top: 1rem;
+  transition: var(--transition);
+}
+input[type="submit"]:hover {
+  background-color: var(--watchdog-white);
+  color: var(--blue-bulletin);
+  cursor: pointer;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+footer li {
+  margin: 1rem 0 0.5rem;
+}
+footer a {
+  padding: 0.5rem;
+}
+small {
+  display: block;
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+/* ///ADD/// Global Text Styles */
+body {
+  font-family: var(--font-body);
+  color: var(--truth-text);
+  font-variation-settings: 'wght' 300;
+}
+header, footer, #breaking-news section, label, legend, input[type="submit"], a {
+  color: var(--watchdog-white);
+}
+h1, h2, h3, blockquote, header p {
+  font-family: var(--font-heading);
+}
+h1 {
+  font-size: 3em;
+  padding: 1.5rem 0 0.5rem;
+}
+h2 {
+  font-size: 1.5em;
+  padding: 2rem 0 0.5rem;
+}
+h3{
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+header p, blockquote {
+  font-variation-settings: 
+    'wght' 600,
+    'wdth' 90;
+}
+p, input {
+  font-size: 1em;
+  font-variation-settings: 'wght' 350;
+  line-height: 1.5em;
+}
+blockquote {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+a, .mobile-nav, legend, input[type="submit"] {
+  text-transform: uppercase;  
+}
+a, .mobile-nav, legend {
+  font-variation-settings: 'wght' 450;
+  text-decoration: none;
+}
+
+/* ///ADD/// medium styles 620px */
+@media screen and (min-width: 620px) {
+  h1, header p, main, footer h2, footer ul {
+  margin: 0 2.5rem;
+  }
+  .menu-button {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-start;
+    margin: 0 2.5rem;
+  }
+  .menu li {
+    width: auto;
+    margin: 0 1rem 0 0;
+  }
+  .menu li a {
+    padding: 0.5em;
+  }
+  h2 {
+    padding-bottom: 1.5rem;
+  }
+  #breaking-news, #featured-articles, form, fieldset ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #breaking-news h2, #featured-articles h2  {
+    grid-column: 1 / 3;
+  }
+  form {
+    grid-template-areas: 
+      "label1 label2"
+      "input1 input2"
+      "fieldset fieldset"
+      "submit submit";
+    gap: 0.5em;
+  }
+  label[for="name"] {
+    grid-area: label1;
+  }
+  label[for="phone"] {
+    grid-area: label2;
+  }
+  #name {
+    grid-area: input1;
+  }
+  #phone {
+    grid-area: input2;
+  }
+  fieldset {
+    grid-area: fieldset;
+  }
+  #send {
+    grid-area: submit;
+  }
+}
+
+/* ///ADD/// large styles 920px */
+@media screen and (min-width: 920px) {
+  h1, header p, .menu, main, footer h2, footer ul {
+  margin: 0 3.5rem;
+  }
+  #featured-articles, fieldset ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #featured-articles h2 {
+    grid-column: 1 / 4;
+  }
+}
+
+/* ///ADD/// x-large styles 1024px */ 
+@media screen and (min-width: 1024px) {
+  h1, header p, main, .menu, footer h2, footer ul {
+  margin: 0 15rem;
+  }
+}
+
+/* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--truth-text);
+    color: var(--watchdog-white);
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background: var(--watchdog-white);
+    color: var(--truth-text);
+  }
+}
+
+/* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
+@supports (display:block) {
+  body:has(#menu-toggle:checked) .menu {
+    display: block; 
+  }
+}
