@@ -1,4 +1,4 @@
-![GitHub profile banner for Katelyn Hernandez](banner.png)
+![GitHub profile banner for Katelyn Hernandez](banner2.png)
 # Hi there, I’m Katelyn! 👋
 Detail-oriented front-end web development student graduating in June with a strong foundation in responsive web design. Dedicated to creating intuitive user experiences through thoughtful design implementation and continuous skill growth.
 
